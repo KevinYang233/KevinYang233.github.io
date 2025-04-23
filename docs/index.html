@@ -1,14 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hans"> 
+  <!--yes, despite the website being written fully in english, 
+  google translate will pop up a translate from german to english banner when lang="de" is used,
+  ok it will for a few seconds and will then realize this website is in english
+  using zh-hans will turn everything into sans serif-->
+  <header>
+    <h1>Website Front BIG NAME</h1>
+    <a href="https://www.freecodecamp.org/news/introduction-to-html-basics/">Copilot gave me the tutorial website from W3SChool wtf, this is from freecodecamp</a>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <head>
+    
     <title>This is a title</title>
-    <h1>heading 1 in header</h1>
+    <h1>heading 1 in head</h1>
   </head>
-  <body>
-    <title>This is a title in body</title>
-    <h1>heading 1 in body</h1>
-    <h2>heading 2 in body</h2>
-    <h3>heading 3 in body</h3>
-    <p>paragraph in body</p>
-  </body>
+  <main> <!--main can be used to improve the readability of html-->
+    <body>
+      <!-- woah this is a comment
+      multi-line comment even
+      make it three lines-->
+      
+      <aside>
+        <h3>Related Links</h3>
+        <ol type="B"> <!--type 1 is the default type, so it will be used when weird stuff is inputed, like B instead of A-->
+          <li><a href="https://en.wikipedia.org/wiki/Comedy">Peak Comedy</a></li>
+          <li><a href="#">li is list item</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ol> <!--apparentely even when the closing tag is ul, it will use the ordered list format-->
+      </aside>
+
+      <title>This is a title in body</title>
+      <h1>heading 1 in body</h1>
+      <h2>heading 2 in body</h2>
+      <h3>heading 3 in body</h3>
+      <p>paragraph in body<br />broken into two lines</p>
+      <div>
+        <p>This paragraph is a list
+          <ul>this portion will be indented without the dot
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+          </ul>
+        </p>
+      </div>
+      <p>This is a <span style="color: red; font-weight: bold;">highlighted</span> text.</p>
+    </body>
+  </main>
+
+  <footer>
+    <p>&copy; Dinky ahh testing Website</p>
+  </footer>
 </html>
