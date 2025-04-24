@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh-hans"> 
+<html lang="en"> 
   <!--yes, despite the website being written fully in english, 
   google translate will pop up a translate from german to english banner when lang="de" is used,
   ok it will for a few seconds and will then realize this website is in english
-  using zh-hans will turn everything into sans serif-->
+  using zh-hans will turn everything into sans serif, cuz microsoft default yahei funni business-->
+  <head>
+    <!--linking to css files should be done in head element-->
+    <link rel="icon" href="../Files/internet-icon.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="alternate" hreflang="zh-hans" href="chinese-version.html" title="Chinese Version">
+
+    <title>This is a title</title>
+    <h1>heading 1 in head</h1>
+  </head>
   <header>
     <h1>Website Front BIG NAME</h1>
     <a href="https://www.freecodecamp.org/news/introduction-to-html-basics/">Copilot gave me the tutorial website from W3SChool wtf, this is from freecodecamp</a>
+    
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -15,11 +25,6 @@
       </ul>
     </nav>
   </header>
-  <head>
-    
-    <title>This is a title</title>
-    <h1>heading 1 in head</h1>
-  </head>
   <main> <!--main can be used to improve the readability of html-->
     <body>
       <!-- woah this is a comment
@@ -49,6 +54,31 @@
           </ul>
         </p>
       </div>
+      <form>
+        <!-- 
+        id is UNIQUE identifier, mostly used for javascript and css
+        name is used to identify the form data after submission, and is not unique
+        action is the url to send the form data to, if not specified, it will be sent to the same page 
+        -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your username"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to goof posts</label><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"><br>
+        
+        <textarea name="message" placeholder="Enter your message"></textarea><br>
+        <input type="radio" id="option1" name="options" value="option1">wot is This
+        <input type="radio" id="option2" name="options" value="option2">only one choice<br>
+        <input type="radio" id="option3" name="options" value="option3">works even through lines heh<br>
+        <button type="submit">Submit</button>
+        
+      </form>
       <p>This is a <span style="color: red; font-weight: bold;">highlighted</span> text.</p>
     </body>
   </main>
